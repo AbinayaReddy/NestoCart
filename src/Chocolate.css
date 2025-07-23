@@ -1,0 +1,107 @@
+/* Chocolate.css */
+
+.chocolate-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.chocolate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.chocolate-card {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.chocolate-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.choco-image {
+  width: 100%;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.choco-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.choco-price {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #00b207;
+}
+
+.add-btn {
+  background-color: #00b207;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: #008e06;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.pagination button {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination .active-page {
+  background-color: #00b207;
+  color: white;
+  border: none;
+}
+
+.pagination button:hover:not(.active-page) {
+  background-color: #f0f0f0;
+}
+.chocolate-search {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
