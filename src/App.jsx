@@ -72,6 +72,7 @@ function App() {
 
       <main className="content">
         <Routes>
+           <Route path='/' element={<Home />} />
           <Route path='/home' element={<Home />} />
           <Route path='/category/:categoryName' element={<CategoryPage />} />  {/* Dynamic Category Route */}
           <Route path='/frozenfood' element={<FrozenFood />} />
